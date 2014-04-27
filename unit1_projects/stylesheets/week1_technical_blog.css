@@ -44,33 +44,17 @@ a:active {color:#DDCEFD;}
 	background-color: #565F70;
 }
 
-/* The content is set up such that it centers on the *page* not within the container */
 
 #content {
 	float: left;
 	margin: 5% 2%; 
 	padding: 3%;
-	width: 45%;  /* 45% doesn't make for good math. but appears to make for correct spacing. */
+	width: 45%;  
 	height: 1200px;
 	background-color: #E3BF8C;
 	font: 16px Verdana,sans-serif;
 	color: #565F70;
 }
-
-.caption {
-	position: absolute; /* relative didn't give me expected result. must be absolute to image? */
-	text-align: center;
-	top: -80px; /* I got this by playing around with alignment values. I have yet to fully 
-	grasp what I managed to do. Sheer blind dumb luck. */
-	width: 100%; /* I think I'm telling it to use image width fully */
-}
-
-.image {
-	position: relative; /* I believe this is relative to its container but not certain */
-	top: 100px; /* I believe I'm proving (well, padding essentially) with this */
-	text-align: center; /* unclear why this works. think I'm taking "text" too literally */
-}
-
 
 #footer {
 	clear: both; /* ensures footer is under both columns */
