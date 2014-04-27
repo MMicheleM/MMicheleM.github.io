@@ -1,0 +1,103 @@
+body {
+	margin: 0px;  /* in order to make header/footer flush with top/bottom of browswer need to */ 
+	padding: 0px; /*set margin/padding of body to 0px */
+	width: 100%;
+	background-color: #565F70;
+	font: 12px Verdana,sans-serif;
+}
+
+ul li {
+	color: #FDFACE;
+}
+
+a:link {color:#916F50;}
+a:visited {color:#FDFACE;}
+a:hover {color:#826CB0;}
+a:active {color:#DDCEFD;}
+
+#header {
+	margin: 0px;
+	padding: 40px;
+	width: 100%;
+	height: 160px;
+	background-color: #31313F;
+	background-image: url('../images/Centerpiece.jpg');
+	background-position: left top;
+	background-repeat: no-repeat;
+	border-bottom: 10px solid #000000;
+}
+
+#ugga {
+	margin: 0px;
+	padding: 6%;
+	text-align: center;
+	vertical-align: middle;
+}
+
+#sidebar {
+	float: left;
+	margin: 5% 2%;
+	padding: 3%;
+	width: 15%;
+	height: 1200px;
+	border-right: 2px dotted #000000;
+	background-color: #565F70;
+}
+
+/* The content is set up such that it centers on the *page* not within the container */
+
+#content {
+	float: left;
+	margin: 5% 2%; 
+	padding: 3%;
+	width: 45%;  /* 45% doesn't make for good math. but appears to make for correct spacing. */
+	height: 1200px;
+	background-color: #E3BF8C;
+	font: 16px Verdana,sans-serif;
+	color: #565F70;
+}
+
+.caption {
+	position: absolute; /* relative didn't give me expected result. must be absolute to image? */
+	text-align: center;
+	top: -80px; /* I got this by playing around with alignment values. I have yet to fully 
+	grasp what I managed to do. Sheer blind dumb luck. */
+	width: 100%; /* I think I'm telling it to use image width fully */
+}
+
+.image {
+	position: relative; /* I believe this is relative to its container but not certain */
+	top: 100px; /* I believe I'm proving (well, padding essentially) with this */
+	text-align: center; /* unclear why this works. think I'm taking "text" too literally */
+}
+
+
+#footer {
+	clear: both; /* ensures footer is under both columns */
+	border-top: 10px solid #000000;
+	margin: 0px;
+	padding: 40px 10px;
+	width: 100%;
+	height: 40px; /* unclear how my height can be smaller than sum of border, padding and text */
+	background-color: #31313F;
+	text-align: center;
+}
+
+.fancy {
+	color: #E3BF8C; /* that color has to declared on its own is odd to me */
+	font: italic small-caps 40px Verdana,sans-serif; 
+}
+
+
+.leftnav {
+	color: #31313F;
+	font: bold small-caps 20px Verdana,sans-serif; 
+
+}
+
+.fancier {
+	color: #FDFACE;
+	font: italic small-caps 18px Verdana,sans-serif; 
+
+}
+
