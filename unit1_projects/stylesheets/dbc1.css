@@ -1,0 +1,107 @@
+html, body
+{
+	margin: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/* It would seem that I need a "parent" div if I'm trying to have a two column layout.
+At least if I'm also trying to have a footer that spans the two columns. That is what this
+fullpage div is trying to do. I'm not convinced I've understood this bit correctly.
+*/
+
+#fullpage
+{
+	width: 100%;
+	height: 100%;
+}
+
+#header 
+{
+	width: 94%;
+	height: 20%;
+	background-color: #3C7B8C;
+	background-image: url('../images/Go_Somewhere.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	padding: 3%;
+}
+
+
+#leftnav 
+{
+	float: left;
+	width: 15%;
+	height: 200%;
+	background-color: #7093B3;
+	padding: 3% 1%;
+}
+
+
+#mainbody 
+{
+	margin-left: 17%;
+	width: 73%;
+	height: 200%;
+	background-color: #76AEBD;
+	padding: 3% 5%;
+}
+
+#footer 
+{
+	clear: both;
+	width: 96%;
+	height: 6%;
+	padding: 2%;
+	background-color: #3C7B8C;
+	text-align: center;
+}
+
+h1 
+{
+	color: #334C80; 
+	font: italic 40px Verdana,sans-serif;
+}     
+
+
+/* from what I can tell for CSS you can't alter font without assign a "height" to it - thus the headers 
+below this - while they would normally render in decreasing size now are the same size/height. 
+I realize I could specify properties for each of the header values but right now I'm just 
+tryinig to get assignments finished. */
+
+h3, h5 
+{
+	color: #334C80; 
+	font: 30px Verdana,sans-serif;
+}
+
+h2, h4, h6 
+{
+	color: #3C7B8C; 
+	font: lighter 20px Arial,sans-serif;
+}
+
+p {
+	color: #001001; 
+	font: 12px Verdana,sans-serif;
+}
+
+ul {
+	color: #001001; 
+	font: 12px Verdana,sans-serif;
+}
+
+ol {
+	color: #001001; 
+	font: 12px Verdana,sans-serif;
+}
+
+li {
+	color: #001001; 
+	font: 12px Verdana,sans-serif;
+}
+
+.llama
+{
+	font-size: 75px;
+}
