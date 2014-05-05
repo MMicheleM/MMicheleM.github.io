@@ -1,37 +1,76 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
 
-<header> 
+	<head>
 
-	<link rel="stylesheet" type="text/css" href="stylesheets/week2_technical_blog.css"> <!-- linking to css file for this page -->
+		<link rel="stylesheet" type="text/css" href="stylesheets/week2_technical_blog.css">
 
-	<title>
-		Michele's Technical Blog - Week 2
-	</title>
+		<title>
+			Michele's Technical Blog - Week 2
+		</title>
 
-</header>
+	</head>
 
+	<body>
 
+		<div id = "header">
+			<div id	= "ugga">
+				<span class = "fancy">
+					Michele's Technical Blog - Week 2
+				</span>
+			</div>
+		</div>
 
-<body>
-	<h1>Classes vs. IDs</h1>
-	<p>One to one (ID) vs. one to many (class)</p>
-	<p>You are (hopefully!) the only one with your ID but there are a bunch of us in this class/cohort. Therefore if you wished to apply your style to yourself you'd select ID however if you wanted to share your fabulous style with all of us you'd want to select class.</p>
+		<div id = "sidebar">
+				
+			<span class = "leftnav">
+				Previous Technical Blogs
+			</span>	
+			<ul>
+				<li><a href="/unit1_projects/week1_technical_blog.html">Week 1</a></li>
 
+			</ul>
+		</div>
 
+		<div id = "content">
+			<h1>Classes vs. IDs</h1>
+				<p>The first question to ask yourself is: are you dealing with a one to one situation (ID) or a one to many (class).</p>
+				<p>Perhaps the easiest way to think about it is this: You are (hopefully!) the only one with your ID but there are a bunch of us in this class/cohort. Therefore if you wished to apply your unique style to yourself you'd select ID however if you wanted to share your fabulous style with all of us you'd want to select class.</p>		
+
+			<p>They both:
+			<ul>
+				<li>Define a special case for an element</li>
+				<li>Behave identically with CSS</li>
+				<li>Can make your head hurt when you're first learning about all this</li>
+				<li>Allow you to make things pretty</li>
+			</ul>
+			</p>
+
+			<p>Where they differ:
+			<ul>
+				<li>Classes allow you to write cleaner code (no styling redundancies needed)</li>
+				<li>IDs can be referenced in a URL and the browser will attempt to scroll to that area</li>
+			</ul>
+			</p>
 	
-	<p>They both:
-		<ul>
-			<li>Define a special case for an element</li>
-			<li></li>
-		</ul>
-	</p>
 
-	<h2>Syntax</h2>
-	<p>In HTML you'll use similar syntax. It'll either be <span class = "showtell">id =</span> or it'll be <span class = "showtell">class =</p>
-	<p>In CSS you'll being your ID with a hashtag <span class = "showtell"> #</span> and your class with a fullstop <span class = "showtell">.</span></p>
+		<h2>Syntax</h2>
+			<p>In HTML you'll use similar syntax. It'll either be <span class = "showtell">id =</span> or it'll be <span class = "showtell">class =</p>
+			<p>In CSS you'll being your ID with a hashtag <span class = "showtell"> #</span> and your class with a period (or full stop) <span class = "showtell">.</span></p>
+			<img src="images/class_div_img1.png" width = "700px" height = "150px"/>
+		</div>
 
-</body>	
+		<div id = "footer">
+
+			<span class = "fancier">
+				With good intentions but still not enough time for design optimization. One day!
+			</span>
+
+		</div>
+
+
+	</body>
+
 
 </html>
