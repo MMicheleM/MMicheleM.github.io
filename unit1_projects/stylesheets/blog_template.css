@@ -161,15 +161,6 @@ footer {
 	height: 200px;
 }
 
-
-#blog {
-	height: 875px;
-	overflow: auto;
-	padding: 0px 20px 10px 20px;
-}
-
-
-
 /* More specific styling and pseudo-classes */
 
 a:link {color:#916F50;}
