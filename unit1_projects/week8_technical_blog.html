@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+	<head>
+
+		<link rel="stylesheet" type="text/css" href="stylesheets/week2_technical_blog.css">
+
+		<title>
+			Michele's Technical Blog - Week 8
+		</title>
+
+	</head>
+
+	<body>
+
+		<div id = "header">
+			<div id	= "ugga">
+				<span class = "fancy">
+					Michele's Technical Blog - Week 8
+				</span>
+			</div>
+		</div>
+
+		<div id = "sidebar">
+				
+			<span class = "leftnav">
+				Previous Technical Blogs
+			</span>	
+			<ul>
+				<li><a href="/unit1_projects/week1_technical_blog.html">Week 1</a></li>
+				<li><a href="/unit1_projects/week2_technical_blog.html">Week 2</a></li>
+				<li><a href="/unit1_projects/week3_technical_blog.html">Week 3</a></li>
+				<li><a href="/unit1_projects/week4_technical_blog.html">Week 4</a></li>
+				<li><a href="/unit1_projects/week5_technical_blog.html">Week 5</a></li>
+				<li><a href="/unit1_projects/week6_technical_blog.html">Week 6</a></li>
+				<li><a href="/unit1_projects/week7_technical_blog.html">Week 7</a></li>
+			</ul>
+		</div>
+
+		
+		<div id = "content">
+			
+		<h1>Regex</h1>
+
+			<img src="images/cute_overload.jpg" width="600px" height="250px" />
+			<h5><i>(Evidently there aren't any funny regex cartoons out there... ergo cute overload.)</i></h5>
+
+		<h3>Defined</h3>
+			<p>Regex - short for Regular Expression - is a special sequence of characters that allows you to match/find other strings or
+				sets of strings. They also allow you to extract the portions that match.</p>
+			<p>One of the beautiful things about Regex is that they're ubiquitous - they work across all languages and any capable text editor.</p>
+			<p>Within the scope of Dev Bootcamp it's also a wonderful thing that there is a Regexp class.</p>
+
+		
+		<h3>Syntax</h3>
+			<p>The basic Ruby syntax is <i>/pattern/</i> or <i>%r{pattern}</i> You can also search using the <i>Regexp.new</i> constructor.</p>
+			<p>The <i>=~</i> operator is Ruby's basic pattern-matching operator. If a match is found the operation returns the index of the
+				first match in the string otherwise it returns nil.</p>
+
+		<h3>Metacharacters and Escapes</h3>
+			<p>Metacharacters have a specific meaning when appearing in a pattern. To match them literally many of them must be backslash escaped. 
+				Ruby Metacharacters requiring an escape are:
+				<ul>
+					<li>(, )</li>
+					<li>[, ]</li>
+					<li>{, }</li>
+					<li>.</li>
+					<li>?</li>
+					<li>+</li>
+					<li>*</li>		
+				</ul>
+			</p>
+			<p>Anchors are a type of metacharacter that match the zero-width positions between characters, anchoring the match to a specific position.
+				<ul>
+					<li>^ matches beginning of the line</li>
+					<li>$ matches end of line</li>
+					<li>\A matches beginning of string</li>
+					<li>\Z matches end of string (if string ends with a new line it matches just before the new line)</li>
+					<li>\z matches end of string</li>
+					<li>\G matches point where last match finished</li>
+					<li>\b matches word boundaries when outside brackets; backspace when inside them</li>
+					<li>\B matches non-word boundaries</li>
+					I got a bit lost with the following ones and so am listing but not trying to define them.
+					<li>(?=pat) is positive look ahead assertion</li>
+					<li>(?!pat) is negative look ahead assertion</li>
+					<li>(?< =pat) is positive look back (minus the space after the <)</li>
+					<li>(?< !pat)" is negative look back (minus the space after the <)</li>				
+
+		<h3>Repetition</h3>
+			<ul>
+					<li>* stands for zero or more times</li>
+					<li>+ stands for one or more times</li>
+					<li>? zero or one times</li>
+					<li>{n} stands for exactly <i>n</i> times</li>
+					<li>{,m} stands for <i>m</i> or less times</li>
+					<li>{n,m} stands for at least <i>n</i> and at most <i>m</i> times</li>
+				</ul>
+
+		<h3>Examples</h3>
+			<h4> Delete empty lines: /^\s*\n/</h4>
+				The caret (^) stands for the start of the line - indicating we'd like to start the search from the beginning of the line.
+				The \s combination represents whitespace
+				The * says that we are looking for 0 or more of the whitespaces
+				And the \n is, of course, our special character for a newline.
+			</p>
+			<p>As it stands the above example will read through whatever text you have it search on from the beginning of each line through
+				to the end of the line. Depending on what you tell it to (vis-a-vis replacement) it will either be modified as instructed or
+				it will remove all empty lines (if you replace it with nothing)
+			</p>
+
+			<h4>Remove spaces from beginning of the line: /^ +/ (or /^\s+/)</h4>
+			<p>A variation on the above would be to remove any/all leading white spaces from lines.	You can either use a literal space or the \s to 
+				indicate the white space.</p>
+			<p>So we know the ^ is start of line (and it's $ if you're looking to match end of line)
+			 	The space or \s is our white space
+			 	And the + looks for one or more of the previous tokens (in this case a white space)
+			 </p>
+
+
+			 <h3>For future consideration</h3>
+			 <p>This is but the tip of the proverbial iceberg. There is SO much more to this regex thing than I can begin to capture in a single blog post. 
+			 	What is apparent to me is the HUGE value it adds to a programmer's toolbox and I'm excited to work with it more in the weeks ahead!
+			 </p>
+		</div>
+
+
+
+		<div id = "footer">
+
+			<span class = "fancier">
+				...Circa week ending June 15, 2014...
+			</span>
+
+		</div>
+
+
+	</body>
+
+
+</html>
