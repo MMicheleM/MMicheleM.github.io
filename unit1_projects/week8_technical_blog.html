@@ -61,6 +61,7 @@
 		<h3>Metacharacters and Escapes</h3>
 			<p>Metacharacters have a specific meaning when appearing in a pattern. To match them literally many of them must be backslash escaped. 
 				Ruby Metacharacters requiring an escape are:</p>
+			<blockquote>
 				<ul>
 					<li>(, )</li>
 					<li>[, ]</li>
@@ -70,7 +71,9 @@
 					<li>+</li>
 					<li>*</li>		
 				</ul>
+			</blockquote>	
 			<p>Anchors are a type of metacharacter that match the zero-width positions between characters, anchoring the match to a specific position.</p>
+				<blockquote>
 				<ul>
 					<li>^ matches beginning of the line</li>
 					<li>$ matches end of line</li>
@@ -81,16 +84,18 @@
 					<li>\b matches word boundaries when outside brackets; backspace when inside them</li>
 					<li>\B matches non-word boundaries</li>
 				</ul>
-					I got a bit lost with the following ones and so am listing but not trying to define them.
+					<p>I got a bit lost with the following ones and so am listing but not trying to define them.</p>
 				<ul>	
 					<li>(?=pat) is positive look ahead assertion</li>
 					<li>(?!pat) is negative look ahead assertion</li>
 					<li>(? =pat) is positive look back (minus the space after the )</li>
 					<li>(? !pat)" is negative look back (minus the space after the )</li>				
 				</ul>	
+				</blockquote>
 
 		<h3>Repetition</h3>
-			<ul>
+				<blockquote>
+				<ul>
 					<li>* stands for zero or more times</li>
 					<li>+ stands for one or more times</li>
 					<li>? zero or one times</li>
@@ -98,7 +103,8 @@
 					<li>{,m} stands for <i>m</i> or less times</li>
 					<li>{n,m} stands for at least <i>n</i> and at most <i>m</i> times</li>
 				</ul>
-
+				</blockquote>
+				
 		<h3>Examples</h3>
 			<h4> Delete empty lines: /^\s*\n/</h4>
 			<p>
